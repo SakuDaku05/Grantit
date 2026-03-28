@@ -1,0 +1,25 @@
+[*] Loading ML Embedding Model (all-MiniLM-L6-v2)...           
+============================================================
+🧪 EVALUATING SEMANTIC TAGGING BASELINE
+============================================================
+FOA ID     | True Tags                                | Predicted Tags
+----------------------------------------------------------------------------------------------------
+[*] Applying rule-based semantic tags (ISSR Taxonomy)...
+FOA-001    | ['AI/Machine Learning']                  | ['AI/Machine Learning']
+[*] Applying rule-based semantic tags (ISSR Taxonomy)...
+FOA-002    | ['Biomedical/Health', 'AI/Machine Learning'] | ['Biomedical/Health', 'AI/Machine Learning']  
+[*] Applying rule-based semantic tags (ISSR Taxonomy)...
+FOA-003    | ['Climate & Environment']                | ['Climate & Environment']
+[*] Applying rule-based semantic tags (ISSR Taxonomy)...
+FOA-004    | ['STEM Education']                       | ['STEM Education']
+[*] Applying rule-based semantic tags (ISSR Taxonomy)...
+FOA-005    | ['Social Sciences & Humanities']         | []
+
+============================================================
+📊 SUMMARY METRICS (Rule-Based Baseline)
+============================================================
+Total Documents Evaluated: 5
+Precision: 1.00 (When it tags a grant, how often is it correct?)
+Recall:    0.83 (Out of all the true tags, how many did it successfully find?)
+F1-Score:  0.91 (The harmonic mean of Precision and Recall)
+============================================================
