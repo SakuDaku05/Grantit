@@ -1,6 +1,5 @@
 AI-Powered Funding Intelligence Pipeline
 
-GSoC 2026 Screening Task Submission | Corresponding Project: Project_ISSR (Institute for Social Science Research)
 
 The Mission
 
@@ -63,7 +62,7 @@ The AI Pivot: Why Gemini & Vectors? (Stretch Goals)
 
 1. Gemini 2.5 Flash (LLM Integration)
 
-To prove my readiness for Phase 3 of the GSoC project, I integrated an LLM stretch goal. I specifically chose Google's Gemini 2.5 Flash for a very specific data-engineering reason: Native JSON Mode.
+To prove my readiness for Phase 3 of the project, I integrated an LLM stretch goal. I specifically chose Google's Gemini 2.5 Flash for a very specific data-engineering reason: Native JSON Mode.
 
 In an automated data pipeline, you don't want an AI that "chats"; you want an AI that formats. By utilizing response_mime_type="application/json", I forced the Gemini model at the API level to strictly output parsable JSON arrays. No markdown backticks, no conversational fluff. This allows the LLM to logically deduce ISSR research categories based on context, guaranteeing structural integrity downstream.
 
@@ -101,11 +100,4 @@ Why doesn't this script automatically download all 10,000 active grants from Gra
 
 **The Roadmap to Scale:** Wrapping a perfectly functioning parser inside an asynchronous crawler is a highly solvable scaling problem.**Phase 1** of the summer project will involve migrating this exact single URL logic into a distributed `Scrapy` or `Celery` worker queue to enable continuous, automated ingestion of the entire agency directory.
 
-Why I'm the Right Fit for this problem??
-
-When I look at the goals of the Institute for Social Science Research, I don't just see a Python coding task; I see a massive bottleneck in the scientific process. Researchers are spending hours digging through archaic portals instead of designing studies.
-
-I would excel in this GSoC role because I don't just write scripts that work on the "happy path." I anticipate the edge cases. I build fail safes and graceful degradations so the pipeline never crashes. I know when to use a fast, cheap Regex heuristic, and when to deploy a heavy, mathematical LLM vectorization.
-
-If provided the opportunity this summer, I won't be spending the first month learning how to scrape; I will be spending it scaling this pipeline to ingest thousands of grants, giving the ISSR an enterprise grade funding intelligence engine from day one.
 
